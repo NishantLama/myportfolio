@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        .blogname{
+    margin: 0;
+    padding: 0;
+    color: gray;
+    }
+.header{
+    background-color: wheat;
+    padding: 10px 5px;
+    display: flex;  
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+}
+.nav ul{
+    display: flex;
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+a{
+    display:block;
+    color: gray;
+    text-decoration: none;
+    padding: 10px 5px;   
+}
+.footer{
+    bottom: 0;
+    left: 0;
+    text-align: center;
+    width: 100%;
+    padding: 10px;
+    background-color: wheat;
+}
+        h1{
+            text-align: center;
+            color: brown;
+        }
+        p{
+            text-align: center;
+            color: brown;
+        }
+        form{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        input[type=text], select, textarea{
+            width: 50%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            resize:vertical;
+        }
+        label{
+            padding: 12px 12px 12px 0;
+            display: inline-block;
+        }
+        input[type=submit]{
+            background-color: brown;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        input[type=submit]:hover{
+            background-color: darkred;
+        }
+        div{
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <h3 class="blogname">
+       <a href="index.html">Nishant Lama's Blog</a>
+    </h3>
+        <nav class="nav">
+            <ul>
+                <li><a href="user.html">User</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div>
+        <h1>Contact us</h1>
+        <p>For any queries, please contact us at:</p>
+        <p>Email:nishantlama987@gmail.com</p>
+        <p>Phone: 6294331025</p>
+    </div>
+    <div>
+        <form action="contactpage.php">
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="Your name..">
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+            <label for="country">Country</label>
+            <select id="country" name="country">
+              <option value="australia">Australia</option>
+              <option value="canada">Canada</option>
+              <option value="usa">USA</option>
+            </select>
+            <label for="subject">Subject</label>
+            <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+            <input type="submit" value="Submit">
+          </form>
+        </form>
+    </div>
+    <footer class="footer">
+        <p>&copy; 2025 Nishant Lama</p>
+    </footer>
+    
+</body>
+</html>

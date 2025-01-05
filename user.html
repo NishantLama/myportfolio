@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User</title>
+    <style>
+           body{
+    margin: 0;
+    padding: 0;
+    }
+.blogname{
+    margin: 0;
+    padding: 0;
+    color: gray;
+    }
+.header{
+    background-color: wheat;
+    padding: 10px 5px;
+    display: flex;  
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+}
+.nav ul{
+    display: flex;
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+a{
+    display:block;
+    color: gray;
+    text-decoration: none;
+    padding: 10px 5px;   
+}
+footer{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+    width: 100%;
+    padding: 10px;
+    color: brown;
+    background-color: wheat;
+}
+        h1 {
+            margin: 0 0 20px;
+            padding: 0;
+            color:goldenrod;
+            text-align: center;
+        }
+        div {
+            margin: 0 auto;
+            width: 300px;
+            padding: 20px;
+            background-color: white;
+            border-radius: 5px;   
+        }
+        input {
+            width: 92%;
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            border: none;
+            border-radius: 5px;
+            background-color: goldenrod;
+            color: #fff;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: darkgoldenrod;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <h3 class="blogname">
+       <a href="index.html">Nishant Lama's Blog</a>
+    </h3>
+        <nav class="nav">
+            <ul>
+                <li><a href="user.html">User</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div>
+        <h1>User</h1>
+        <form action="login">
+            <input type="text" name="username" placeholder="Username">
+            <input type="password" name="password" placeholder="Password">
+            <input type="hidden" name="role" value="user">
+            <button type="submit">Login</button>
+        </form>
+    </div>
+    <footer>
+        <p class="footer">&copy; 2025 Nishant Lama</p>
+    </footer>
+</body>
+</html>
